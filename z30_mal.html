@@ -2,15 +2,28 @@
      <head> 
            <script type="text/javascript"> 
                  var samochód = { 
-   nazwisko: 'Malak', 
-   imie: 'Kornel', 
-   zawod: 'informatyk', 
-   pokaz: function () 
-     { 
-        document.write(this.nazwisko + ' ' + this.imie) 
-     } 
-  } 
-  samochód.pokaz(); 
+   marka: 'Skoda', 
+   konie_mechaniczne: '115', 
+   ile_drzwi: '5', 
+
+   Samochód_wyswietl_nazwisko: function(){
+     console.log("Malak");
+     },
+     wyswietl_marka: function() {
+     console.log(this.marka);
+     },
+     wyswietl_konie_mechaniczne: function() {
+     console.log(this.konie_mechaniczne);
+     },
+     wyswietl_ile_drzwi: function() {
+     console.log(this.ile_drzwi);
+     }
+}
+
+     samochód.wyswietl_marka()<br>
+     samochód.wyswietl_konie_mechaniczne() <br>
+     samochód.wyswietl_ile_drzwi() <br>
+          
             </script> 
      </head> 
 <body> 

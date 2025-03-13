@@ -15,30 +15,37 @@
 
 <textarea name="Malak" cols="80" rows="25" disabled>
 <html> 
-     <head> 
-           <script type="text/javascript"> 
-                 var samochód = { 
-   nazwisko: 'Malak', 
-   imie: 'Kornel', 
-   zawod: 'informatyk', 
-   pokaz: function () 
-     { 
-        document.write(this.nazwisko + ' ' + this.imie) 
-     } 
-  } 
-  samochód.pokaz(); 
-            </script> 
-     </head> 
+<head> 
+    <script type="text/javascript"> 
+        class Klient {
+            constructor(nazwisko_k, imie_k, zawod_k) {
+                this.nazwisko = nazwisko_k;
+                this.imie = imie_k;
+                this.zawod = zawod_k;
+            }
+            wpisz() {
+                alert(this.nazwisko + ' ' + this.imie + ' ' + this.zawod);
+            }
+        }
+
+        var osoba1 = new Klient("Kowalski", "Jan", "kierowca");
+        var osoba2 = new Klient("Nowak", "Anna", "sekretarka");
+
+        // Wywołanie funkcji po załadowaniu strony
+        window.onload = function() {
+            osoba1.wpisz();
+            osoba2.wpisz();
+
+            document.write("Klient pierwszy: " + osoba1.nazwisko + " " + osoba1.imie + " " + osoba1.zawod + "<br>");
+            document.write("Klient drugi: " + osoba2.nazwisko + " " + osoba2.imie + " " + osoba2.zawod);
+        };
+    </script> 
+</head> 
 <body> 
- <br> 
-   Programowanie obiektowe. <br> 
-     Obiekt  to  samochód<br> 
-     Pola:<br> 
-     Kolor<br> 
-     Marka<br> 
-     Rodzaj<br> 
-     metoda:  samochod_pokaż_malak<br> 
+      metoda: samochod_pokaz_kowalski <br>
 </body> 
 </html>
 
 </textarea>
+</body>
+</html>

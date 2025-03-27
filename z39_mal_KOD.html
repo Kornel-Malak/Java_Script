@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_Malak()
+ {
+ window.close()
+ }
+21
+ </script>
+</head>
+<body>
+ <form>
+
+<textarea name="Malak" cols="80" rows="25" disabled>
+<html>
+<head>
+    <title>Wybór koloru</title>
+</head>
+<body>
+
+    <h1 style="color: green;">MENU</h1>
+    
+    <h1 style="color: red;">1 - CZERWONY</h1>
+    <h1 style="color: blue;">2 - NIEBIESKI</h1>
+
+    <input type="button" value="Oblicz" onclick="fun_mal()" /> 
+
+    <script> 
+        function fun_mal() { 
+            var x_mal = prompt("Podaj kolor:", ""); 
+            if (x_mal !== null) {
+                x_mal = x_mal.toLowerCase(); // Ignorujemy wielkość liter
+
+                if (x_mal == "1" || x_mal == "czerwony") { 
+                    document.write('<h1 style="color:red; font-size: 50px;">Wczytałeś kolor czerwony</h1><br />'); 
+                } 
+                else if (x_mal == "2" || x_mal == "niebieski") { 
+                    document.write('<h1 style="color:blue; font-size: 30px;">Wczytałeś kolor niebieski</h1><br />'); 
+                } 
+                else {
+                    document.write('<h1 style="color:black; font-size: 40px;">Niepoprawny wybór!</h1>');
+                }
+            }
+        } 
+    </script>
+
+</body>
+</html>
+
+</textarea>
+</body>
+</html>

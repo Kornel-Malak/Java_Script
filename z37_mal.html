@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Historia JavaScript</title>
+</head>
+<body>
+
+<div style="font-size: 30px; color: black;"> 
+    <script language="JavaScript"> 
+        var rok_mal = prompt("Podaj rok, od którego JavaScript jest w użyciu:", ""); 
+        var rok = parseInt(rok_mal); // Konwersja na liczbę całkowitą
+
+        if (!isNaN(rok)) { // Sprawdzenie, czy użytkownik wpisał liczbę
+            document.write("<p style=\"font-size: 30px; color: black;\"><br>Wczytany rok = " + rok + "<br></p>");
+
+            if (rok == 1995) { 
+                document.write("<p style=\"font-size: 4em; color: blue;\"><br>Brawo, znasz rok od kiedy działa JavaScript!</p>"); 
+            } else { 
+                document.write("<p style=\"font-size: 7em; color: red;\"><br>Źle, musisz jeszcze poczytać!</p>"); 
+            }
+        } else {
+            document.write("<p style=\"font-size: 40px; color: black;\"><br>Błąd: Wprowadź poprawny rok!</p>");
+        }
+    </script> 
+</div> 
+
+</body> 
+</html>
+

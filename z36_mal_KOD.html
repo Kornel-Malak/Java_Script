@@ -1,0 +1,63 @@
+</textarea>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_Malak()
+ {
+ window.close()
+ }
+21
+ </script>
+</head>
+<body>
+ <form>
+
+<textarea name="Malak" cols="80" rows="25" disabled>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sprawdzenie liczby</title>
+</head>
+<body>
+
+<div style="color:red;font-size:50px;"> 
+    <script language="JavaScript"> 
+        var x = prompt("Podaj liczbę x=", ""); 
+        var a = parseFloat(x); 
+
+        if (!isNaN(a)) { // Sprawdza, czy wprowadzono liczbę
+            document.write("<p style=\"font-size: 40px; color: black;\"><br>Wczytana liczba x = " + a + "<br></p>");
+
+            if (a > 0) {
+                document.write("<p style=\"font-size: 30px; color: green;\"><br>Liczba jest większa od 0<br></p>");
+            } 
+            else if (a == 0) {
+                document.write("<p style=\"font-size: 30px; color: blue;\"><br>Liczba jest równa 0<br></p>");
+            } 
+            else {
+                document.write("<p style=\"font-size: 30px; color: purple;\"><br>Liczba jest mniejsza od 0<br></p>");
+            }
+
+            // Sprawdzenie parzystości liczby
+            if (a % 2 == 0) {
+                document.write("<p style=\"font-size: 30px; color: red;\"><br>Liczba jest parzysta</p>");
+            } else {
+                document.write("<p style=\"font-size: 50px; color: silver;\"><br>Liczba jest nieparzysta</p>");
+            }
+        } else {
+            document.write("<p style=\"font-size: 40px; color: black;\"><br>Błąd: Wprowadzono niepoprawną wartość!</p>");
+        }
+    </script> 
+</div> 
+
+</body> 
+</html>
+
+</textarea>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Rysowanie prostokąta - mal</title>
+</head>
+<body>
+<pre style="font-size:16px; line-height:1; font-family: monospace; color:blue;">
+<script>
+  
+  let nazwisko_mal = "malak";
+  let imie_mal = "kornel";
+
+  
+  let a_mal = (nazwisko_mal.length % 4) + 5; 
+  let b_mal = (imie_mal.length % 6) + 20;   
+
+  
+
+ 
+  for(let i_mal=0; i_mal < a_mal; i_mal++) {
+    document.write("*");
+  }
+  document.write("<br>");
+
+  
+  for(let j_mal=0; j_mal < b_mal - 2; j_mal++) {
+    document.write("*"); 
+    for(let k_mal=0; k_mal < a_mal - 2; k_mal++) {
+      document.write("&nbsp;");
+    }
+    if(a_mal > 1) {
+      document.write("*"); 
+    }
+    document.write("<br>");
+  }
+
+  
+  if(b_mal > 1) {
+    for(let i_mal=0; i_mal < a_mal; i_mal++) {
+      document.write("*");
+    }
+    document.write("<br>");
+  }
+
+  
+  document.write("<br>Wymiary prostokąta: szerokość (a_mal) = " + a_mal + ", wysokość (b_mal) = " + b_mal);
+</script>
+</pre>
+</body>
+</html>

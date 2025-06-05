@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_Malak()
+ {
+ window.close()
+ }
+21
+ </script>
+</head>
+<body>
+ <form>
+
+<textarea name="Malak" cols="80" rows="25" disabled>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Obliczanie silni - Malak</title>
+</head>
+<body>
+  <div style="color:red; font-size:30px;">
+    <script>
+      // Zmienne z trzema literami nazwiska 'mal'
+      let n_mal;
+      let silnia_mal = 1;
+
+      // Wczytanie liczby n_mal
+      n_mal = parseInt(prompt("Podaj liczbę n:", ""));
+
+      // Sprawdzenie czy podano liczbę i czy jest >=0
+      if (isNaN(n_mal) || n_mal < 0) {
+        document.write("Podaj poprawną liczbę naturalną (0 lub większą).");
+      } else {
+        if (n_mal === 0) {
+          // Silnia 0! = 1 bez pętli
+          silnia_mal = 1;
+        } else {
+          // Pętla od 1 do n_mal
+          for (let i_mal = 1; i_mal <= n_mal; i_mal++) {
+            silnia_mal = silnia_mal * i_mal;
+          }
+        }
+
+        document.write(n_mal + "! = " + silnia_mal);
+      }
+    </script>
+  </div>
+</body>
+</html>
+</textarea>
+</body>
+</html>

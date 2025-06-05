@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Sprawdzanie boków trójkąta - mal</title>
+</head>
+<body>
+  <div style="color:red; font-size:30px;">
+    <script>
+      let a_mal, b_mal, c_mal;
+
+      do {
+        do {
+          a_mal = parseFloat(prompt("Podaj bok a trójkąta:", ""));
+        } while (!(a_mal > 0));
+
+        do {
+          b_mal = parseFloat(prompt("Podaj bok b trójkąta:", ""));
+        } while (!(b_mal > 0));
+
+        do {
+          c_mal = parseFloat(prompt("Podaj bok c trójkąta:", ""));
+        } while (!(c_mal > 0));
+
+      } while (!(
+        (a_mal + b_mal > c_mal) &&
+        (a_mal + c_mal > b_mal) &&
+        (b_mal + c_mal > a_mal)
+      ));
+
+      document.write("Boki trójkąta są poprawne:<br>");
+      document.write("a = " + a_mal + " cm<br>");
+      document.write("b = " + b_mal + " cm<br>");
+      document.write("c = " + c_mal + " cm<br>");
+    </script>
+  </div>
+</body>
+</html>

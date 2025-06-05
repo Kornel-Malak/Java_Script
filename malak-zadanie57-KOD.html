@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_Malak()
+ {
+ window.close()
+ }
+21
+ </script>
+</head>
+<body>
+ <form>
+
+<textarea name="Malak" cols="80" rows="25" disabled>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8" />
+<title>Pierwiastki drugiego i czwartego stopnia</title>
+</head>
+<body style="font-family: monospace; font-size: 16px;">
+<script>
+  // Numer w dzienniku ustawiony na 16
+  let numer_mal = 16;
+
+  let koniec_mal = numer_mal + 15;
+  let linieNaStronie = 3;
+  let count = 0;
+
+  for(let i_mal = numer_mal; i_mal <= koniec_mal; i_mal++) {
+    let pierw_2_mal = Math.sqrt(i_mal);
+    let pierw_4_mal = Math.sqrt(pierw_2_mal);
+
+    document.write(
+      "I=" + i_mal + "\t" +
+      "pierw_2(" + i_mal + ")=" + pierw_2_mal.toFixed(2) + "\t" +
+      "pierw_4(" + i_mal + ")=" + pierw_4_mal.toFixed(2) + "<br>"
+    );
+
+    count++;
+
+    if(count % linieNaStronie === 0 && i_mal !== koniec_mal) {
+      document.write("<br>----- Pauza po 3 liniach -----<br><br>");
+    }
+  }
+</script>
+</body>
+</html>
+</textarea>
+</body>
+</html>

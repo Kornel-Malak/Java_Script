@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Parzyste liczby</title>
+</head>
+<body>
+  <div style="color: red; font-size: 30px;">
+    <script>
+      // Wczytanie końcowej wartości pętli
+      let koniec_petli_mal = parseInt(prompt("Podaj liczbę końcową:"));
+
+      // Sprawdzenie poprawności wejścia
+      if (!isNaN(koniec_petli_mal) && koniec_petli_mal >= 2) {
+        for (let i_mal = 2; i_mal <= koniec_petli_mal; i_mal++) {
+          if (i_mal % 2 === 0) {
+            document.write("Liczba parzysta: " + i_mal + " <br>");
+          }
+        }
+      } else {
+        document.write("Podano nieprawidłową wartość.");
+      }
+    </script>
+  </div>
+</body>
+</html>
